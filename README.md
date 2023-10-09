@@ -1,9 +1,25 @@
-## 병맛 실시간 투표
-- 투표수가 커질때마다 이미지 크기가 커짐
+## Vote
+- 투표하기 아프리카TV 익스텐션
 
-### BJ화면
-- 투표 이미지 등록
+## Spec
+- Tailwind CSS + TypeScript + Flowbite Starter
 
-### 유저화면
-- 투표하기 화면
-- 한번 투표하면 끝이아니라 취소 가능
+## Getting started
+
+Make sure that you have Node.js installed on your project. Run the following command to install all dependencies:
+
+```
+npm install
+```
+
+Run this command to compile and watch for changes for Tailwind CSS:
+
+```
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+```
+
+Run this command to compile and bundle the TypeScript code into `app-bundle.js`:
+
+```
+npx webpack --watch
+```

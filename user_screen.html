@@ -2,22 +2,22 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
-    <!--Let browser know website is optimized for mobile-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>user</title>
+    <title>User</title>
+    <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body style="width: 500px;height: 640px;padding: 10px;">
-    <h5 style="text-align: center;">원하는 후보에게 하트를 마구 눌러주세요!!</h5>
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="https://static.afreecatv.com/asset/app/extension-helper/afreecatv-extension-sdk.js"></script>
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Initialize Materialize form components
-            M.AutoInit();
-        });
-    </script>
+<body class="items-center justify-center h-screen" style="padding: 10px;">
+    <p class="text-sm text-gray-900 dark:text-white" style="display: flex;justify-content: center;align-items: center;">
+        <b>투표 해주세요!</b><img src="./src/gazea2.png" alt="vote" style="width: 80px;float: right;">
+    </p>
+    <form id="userCandidateForm">
+        <ul id="candidateUl" class="items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white"></ul>
+    </form>
+    <div class="text-center">
+        <br>
+        <button id="userSubmitBtn" type="button" class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">투표하기</button>
+    </div>
+    <script src="./dist/app-bundle.js"></script>
 </body>
 </html>
